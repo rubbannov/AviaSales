@@ -11,7 +11,7 @@ public class AviaSalesTest {
     AviaSalesRepository repository = new AviaSalesRepository();
     AviaSalesManager manager = new AviaSalesManager(repository);
 
-    Ticket ticket1 = new Ticket(1,4500, "SVO","LED",95);
+    Ticket ticket1 = new Ticket(1,4600, "SVO","LED",95);
     Ticket ticket2 = new Ticket(2,4700, "SVO", "LED", 100);
     Ticket ticket3 = new Ticket(3,7600, "VKO","MSQ",85);
     Ticket ticket4 = new Ticket(4,5990, "MSQ", "VKO", 90);

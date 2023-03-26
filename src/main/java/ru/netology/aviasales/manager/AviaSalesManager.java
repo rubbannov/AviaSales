@@ -3,6 +3,10 @@ package ru.netology.aviasales.manager;
 import ru.netology.aviasales.domain.Ticket;
 import ru.netology.aviasales.repository.AviaSalesRepository;
 
+import java.util.Arrays;
+
+import static java.util.Arrays.*;
+
 public class AviaSalesManager {
     AviaSalesRepository repository = new AviaSalesRepository();
 
@@ -23,6 +27,7 @@ public class AviaSalesManager {
                 result = tmp;
             }
         }
+        Arrays.sort(result);
         return result;
     }
     private boolean matchesDeparture(Ticket ticket, String search) { //Совпадения по вылету
